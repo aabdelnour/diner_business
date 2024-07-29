@@ -1,19 +1,99 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+@import url("https://fonts.googleapis.com/css2?family=Outfit");
+@import url("https://fonts.googleapis.com/css2?family=Oswald");
+
+
+*{
+    box-sizing: border-box;
     margin: 0;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
 }
-img {
-    max-width: 100%;
-    height: auto;
+
+
+
+:root {
+    --bg-color: #011F26;
+    --primary-accent: #F2EFDC;
+    --secondary-accent: #BF4B4B;
+    --blue-light: #88BABF;
+    --blue-mid: #659AA6;
+    --blude-deep: #005C72;
+
+    --font-primary: "Outfit", sans-serif;
+    --font-secondary: "Oswald", sans-serif;
+
+    
+    
+    
+    --size-h1:4.25rem; /*68px*/	
+    --size-h2:3rem; /*48px*/
+    --size-menu:2rem; /*32px*/
+    --size-testimonial:1.75rem; /*28px*/
+    --size-body:1.25rem; /*20px*/
+
+    /* 
+    NOTE about font weight
+
+    500 is regular
+    600-700 is semibold (depends on size)
+    800-900 is bold
+    */
 }
-h1 {
-    margin-top: 20px;
-    font-size: 24px;
-    color: #333;
+
+
+
+
+
+body {
+    background: var(--bg-color);
+    color: var(--primary-color);
+    font: var(--size-body) / 1.6 var(--font-primary);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-secondary);
+    text-transform: capitalize;
+    line-height: 100%;
+}
+
+p {
+    font-size: var(--size-body);
+}
+
+a {
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: var(--size-menu);
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    width: 61.8vw;
+    max-width: 1440;
+    margin: 0 auto; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    line-height: 4rem;
+    font-size: var(--links-fonts);
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between; /* this way, centered with logo*/
+    flex-basis: 33.33%;
+    gap: 30px;
 }
