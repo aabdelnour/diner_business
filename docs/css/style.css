@@ -149,6 +149,15 @@ footer {
     margin-top: 5rem;
 }
 
+.footer-decoration {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.593rem;
+    background-image: linear-gradient(to right, var(--secondary-accent) 30%, var(--primary-accent) 39%, var(--blue-light) 47%, var(--blue-deep) 80%, var(--secondary-accent) 100%);
+}
+
 
 .column {
     flex: 1;
