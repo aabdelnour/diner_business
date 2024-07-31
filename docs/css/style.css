@@ -15,12 +15,14 @@
     --secondary-accent: #BF4B4B;
     --blue-light: #88BABF;
     --blue-mid: #659AA6;
-    --blude-deep: #005C72;
+    --blue-deep: #005C72;
+
+    --glass-red: #C83F47;
+    --glass-blue: #0083a1af;
 
     --font-primary: "Outfit", sans-serif;
     --font-secondary: "Oswald", sans-serif;
 
-    
     
     
     --size-h1:4.25rem; /*68px*/	
@@ -58,10 +60,12 @@ h6 {
     font-family: var(--font-secondary);
     text-transform: capitalize;
     line-height: 100%;
+    color: white;
 }
 
 p {
     font-size: var(--size-body);
+    color: white;
 }
 
 a {
@@ -90,7 +94,6 @@ header {
     line-height: 4rem;
     font-size: var(--size-menu);
     font-family: var(--font-secondary);
-    
 }
 
 .menu {
@@ -110,17 +113,84 @@ header {
     text-transform: capitalize;
     max-width: 100%;
     max-height: auto;
-    white-space: nowrap;
-    
+    white-space: nowrap; 
 }
 
 .menu img {
     max-width: 5rem;
     height: 100%;
-
 }
 
 /* menu end */
+
+
+/* footer start*/
+footer p {
+    font-weight: 600;
+}
+
+footer a {
+    color: white;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+footer h3 {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 7rem;
+    margin-top: 5rem;
+}
+
+
+.column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.column form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.column form input[type="email"] {
+    background-color: #c1dde0cb;
+    color: black;
+    padding: 15px 30px;
+    border-radius: 80px;
+    font-family: var(--font-secondary);
+    font-size: var(--size-body);
+    position: relative;
+}
+
+.column form input[type="submit"] {
+    background-color: var(--blue-deep);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 80px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: var(--font-secondary);
+    font-size: var(--size-body);
+}
+
+.column form input[type="submit"]:hover {
+    background-color: var(--blue-mid);
+}
+/* footer end */
 
 
 
