@@ -63,6 +63,14 @@ h6 {
     color: white;
 }
 
+h1 {
+    font-size: var(--size-h1);
+}
+h2 {
+    font-size: var(--size-h2);
+}
+
+
 p {
     font-size: var(--size-body);
     color: white;
@@ -93,7 +101,7 @@ header {
     align-items:center;
     line-height: 4rem;
     font-size: var(--size-menu);
-    font-family: var(--font-secondary);
+    font-family: var(--font-secondary); 
 }
 
 .menu {
@@ -123,50 +131,6 @@ header {
 
 /* menu end */
 
-/* closing start */
-.closing {
-    background: var(--blue-light);
-    height: 48rem;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-
-.closing-text{
-    flex: 1;
-    text-align: left;
-    margin: 1rem;
-
-}
-
-.closing-image{
-    width: 425px;
-    height: 520px;
-    background: var(--primary-accent);
-    margin-left: 5rem;
-    position: right;
-    flex: 1;
-}
-
-.closing h1 {
-    margin: 1rem;
-    color: var(--primary-accent);
-    font-size: 3rem;
-    line-height: 1.75;
-}
-
-.closing h2{
-    font-weight: 500;
-    margin: 1rem;
-    line-height: 1.75;
-    font-size: 2rem;
-    color: var(--primary-accent);
-}
-
-.closing 
-
-/* closing end */
 
 /* footer start*/
 footer p {
@@ -267,134 +231,5 @@ footer {
 /* footer end */
 
 
-/* slogan start */
-.slogan {
-    position: relative;
-    width: 100%;
-    height: 521px;
-    overflow: hidden;
-    background-image: url('images/nyc-skyline.png');
-    background-size: cover;
-    background-position: center;
-}
 
-.slogan-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(101,154,166,0.8) 0%, rgba(0,92,114,0.8) 100%);
-}
 
-.slogan-content {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    max-width: 500px;
-}
-
-.slogan h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 62px;
-    font-weight: 600;
-    color: #F2EFDC;
-    line-height: 1.1;
-    margin: 0;
-}
-
-.gradient-text {
-    background: linear-gradient(to bottom, #FF6B6B, #FF9F9F);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    display: inline-block;
-}
-/* slogan end */
-
-/*action start*/
-.cta {
-    position: relative;
-    width: 100%;
-    height: 838px;
-    overflow: hidden;
-    background-image: url('images/cta-burger.png');
-    background-size: cover;
-    background-position: center;
-}
-
-.cta-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(0, 130, 161, 0.65) 28%, rgba(0, 130, 161, 0.65) 100%);
-}
-
-.cta-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    width: 80%;
-}
-
-.cta h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 62px;
-    font-weight: 600;
-    color: #F2EFDC;
-    line-height: 1.2;
-    margin-bottom: 60px;
-}
-
-.cta-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.cta-button {
-    font-family: 'Outfit', sans-serif;
-    font-size: 48px;
-    font-weight: 600;
-    color: #F2EFDC;
-    border: 5px solid #F2EFDC;
-    border-radius: 50px;
-    padding: 10px 50px;
-    cursor: pointer;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #F2EFDC;
-}
-
-.cta-button.locations {
-    background-color: #04728C;
-}
-
-.cta-button.locations:hover {
-    color: #000000;
-}
-
-.cta-button.see-menu {
-    background-color: #BF4B4B;
-}
-
-.cta-button.see-menu:hover {
-    color: #000000;
-}
-
-.cta-button.about-us {
-    background-color: #659AA6;
-}
-
-.cta-button.about-us:hover {
-    color: #000000;
-}
-/*action end */
