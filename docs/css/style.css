@@ -63,6 +63,14 @@ h6 {
     color: white;
 }
 
+h1 {
+    font-size: var(--size-h1);
+}
+h2 {
+    font-size: var(--size-h2);
+}
+
+
 p {
     font-size: var(--size-body);
     color: white;
@@ -93,7 +101,7 @@ header {
     align-items:center;
     line-height: 4rem;
     font-size: var(--size-menu);
-    font-family: var(--font-secondary);
+    font-family: var(--font-secondary); 
 }
 
 .menu {
@@ -223,50 +231,8 @@ footer {
 /* footer end */
 
 
-/* slogan start */
-.slogan {
-    position: relative;
-    width: 100%;
-    height: 521px;
-    overflow: hidden;
-    background-image: url('images/nyc-skyline.png');
-    background-size: cover;
-    background-position: center;
-}
 
-.slogan-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(101,154,166,0.8) 0%, rgba(0,92,114,0.8) 100%);
-}
 
-.slogan-content {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-    max-width: 500px;
-}
-
-.slogan h2 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 62px;
-    font-weight: 600;
-    color: #F2EFDC;
-    line-height: 1.1;
-    margin: 0;
-}
-
-.gradient-text {
-    background: linear-gradient(to bottom, #FF6B6B, #FF9F9F);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    display: inline-block;
-}
-/* slogan end */
 
 /*action start*/
 .cta {
