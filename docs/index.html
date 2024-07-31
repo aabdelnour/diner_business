@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>DinerName - Food with a Side of Sass</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -31,9 +32,29 @@
         <!-- hero end -->
 
         <!-- slogan start -->
-        <section class="slogan">
-            
+        <section class="slogan" style="position: relative; width: 100%; height: 521px; overflow: hidden;">
+            <img src="images/nyc-skyline.png" alt="New York City skyline" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(180deg, rgba(101,154,166,0.8) 0%, rgba(0,92,114,0.8) 100%);">
+            </div>
+            <div style="position: absolute; top: 50px; left: 50px; max-width: 500px;">
+                <h2 style="font-family: 'Oswald', sans-serif; font-size: 62px; font-weight: 600; color: #F2EFDC; line-height: 1.1; margin: 0;">
+                    More people are<br>
+                    bitten each year<br>
+                    <span class="gradient-text">by New Yorkers</span><br>
+                    than by sharks
+                </h2>
+            </div>
         </section>
+        
+        <style>
+            .gradient-text {
+                background: linear-gradient(to bottom, #FF6B6B, #FF9F9F);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+                display: inline-block;
+            }
+        </style>
         <!-- slogan end -->
 
         <!-- action start -->
