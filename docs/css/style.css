@@ -17,7 +17,7 @@
     --blue-mid: #659AA6;
     --blue-deep: #005C72;
 
-    --glass-red: #C83F47;
+    --glass-red: #c83f4878;
     --glass-blue: #0083a1af;
 
     --font-primary: "Outfit", sans-serif;
@@ -233,3 +233,133 @@ footer {
 
 
 
+
+/*action start*/
+.cta {
+    position: relative;
+    width: 100%;
+    height: 838px;
+    overflow: hidden;
+    background-image: url('images/cta-burger.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.cta-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 130, 161, 0.65) 28%, rgba(0, 130, 161, 0.65) 100%);
+}
+
+.cta-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+.cta h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 62px;
+    font-weight: 600;
+    color: #F2EFDC;
+    line-height: 1.2;
+    margin-bottom: 60px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cta-button {
+    font-family: 'Outfit', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: #F2EFDC;
+    border: 5px solid #F2EFDC;
+    border-radius: 50px;
+    padding: 10px 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #F2EFDC;
+}
+
+.cta-button.locations {
+    background-color: #04728C;
+}
+
+.cta-button.locations:hover {
+    color: #000000;
+}
+
+.cta-button.see-menu {
+    background-color: #BF4B4B;
+}
+
+.cta-button.see-menu:hover {
+    color: #000000;
+}
+
+.cta-button.about-us {
+    background-color: #659AA6;
+}
+
+.cta-button.about-us:hover {
+    color: #000000;
+}
+/*action end */
+
+/* closing start */
+.closing {
+    background: var(--blue-light);
+    height: 48rem;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.closing-text{
+    flex: 1;
+    text-align: left;
+    margin: 1rem;
+
+}
+
+.closing-image{
+    width: 425px;
+    height: 520px;
+    background: var(--primary-accent);
+    margin-left: 5rem;
+    position: right;
+    flex: 1;
+}
+
+.closing h1 {
+    margin: 1rem;
+    color: var(--primary-accent);
+    font-size: 3rem;
+    line-height: 1.75;
+}
+
+.closing h2{
+    font-weight: 500;
+    margin: 1rem;
+    line-height: 1.75;
+    font-size: 2rem;
+    color: var(--primary-accent);
+}
+
+/* closing end/*
