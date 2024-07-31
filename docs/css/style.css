@@ -158,21 +158,28 @@ footer {
 }
 
 .column form {
+    /*
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    */
+    width: 400px;
+    max-width: 100%;
+    position: relative; 
 
 }
 
 .column form input[type="email"] {
     background-color: #c1dde0cb;
     color: black;
-    padding: 15px 30px;
+
+    padding: 1rem 2rem;
     border-radius: 80px;
     font-family: var(--font-secondary);
     font-size: var(--size-body);
-    position: relative;
+
+    width: 100%;
 }
 
 .column form input[type="submit"] {
@@ -181,10 +188,24 @@ footer {
     border: none;
     padding: 15px 30px;
     border-radius: 80px;
+    height: 100% - 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-family: var(--font-secondary);
     font-size: var(--size-body);
+
+    
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    bottom: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1;
+
 }
 
 .column form input[type="submit"]:hover {
