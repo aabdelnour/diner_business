@@ -17,7 +17,7 @@
     --blue-mid: #659AA6;
     --blue-deep: #005C72;
 
-    --glass-red: #C83F47;
+    --glass-red: #c83f4878;
     --glass-blue: #0083a1af;
 
     --font-primary: "Outfit", sans-serif;
@@ -123,50 +123,6 @@ header {
 
 /* menu end */
 
-/* closing start */
-.closing {
-    background: var(--blue-light);
-    height: 48rem;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-
-.closing-text{
-    flex: 1;
-    text-align: left;
-    margin: 1rem;
-
-}
-
-.closing-image{
-    width: 425px;
-    height: 520px;
-    background: var(--primary-accent);
-    margin-left: 5rem;
-    position: right;
-    flex: 1;
-}
-
-.closing h1 {
-    margin: 1rem;
-    color: var(--primary-accent);
-    font-size: 3rem;
-    line-height: 1.75;
-}
-
-.closing h2{
-    font-weight: 500;
-    margin: 1rem;
-    line-height: 1.75;
-    font-size: 2rem;
-    color: var(--primary-accent);
-}
-
-.closing 
-
-/* closing end */
 
 /* footer start*/
 footer p {
@@ -398,3 +354,46 @@ footer {
     color: #000000;
 }
 /*action end */
+
+/* closing start */
+.closing {
+    background: var(--blue-light);
+    height: 48rem;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.closing-text{
+    flex: 1;
+    text-align: left;
+    margin: 1rem;
+
+}
+
+.closing-image{
+    width: 425px;
+    height: 520px;
+    background: var(--primary-accent);
+    margin-left: 5rem;
+    position: right;
+    flex: 1;
+}
+
+.closing h1 {
+    margin: 1rem;
+    color: var(--primary-accent);
+    font-size: 3rem;
+    line-height: 1.75;
+}
+
+.closing h2{
+    font-weight: 500;
+    margin: 1rem;
+    line-height: 1.75;
+    font-size: 2rem;
+    color: var(--primary-accent);
+}
+
+/* closing end/*
