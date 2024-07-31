@@ -17,7 +17,7 @@
     --blue-mid: #659AA6;
     --blue-deep: #005C72;
 
-    --glass-red: #C83F47;
+    --glass-red: #c83f4878;
     --glass-blue: #0083a1af;
 
     --font-primary: "Outfit", sans-serif;
@@ -123,6 +123,32 @@ header {
 
 /* menu end */
 
+/*hero start */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 521px;
+    overflow: hidden;
+    background: url(../images/sassy-waitress.png) var(--glass-red);
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: var(--size-h1);
+    font-size: var(--size-h2);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+/* hero end*/
 
 /* footer start*/
 footer p {
