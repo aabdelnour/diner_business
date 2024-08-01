@@ -363,3 +363,42 @@ footer {
 }
 
 /* closing end/*
+
+/* gallery start */
+
+
+.waffle-image {
+    background: url(../images/photo-food.png);
+    border-radius: 60px;
+    width: 451px;
+    height: 314.32px;
+    margin-left: 263px;
+    top: 3915.96px;
+}
+
+.waitress-image {
+    background: url(../images/photo-waitress.png);
+    border-radius: 60px;
+    width: 451px;
+    height: 628.63px;
+    margin-left: 727px;
+}
+
+.diner-image{
+    background: url(../images/photo-diner.png);
+    border-radius: 60px;
+    width: 915px;
+    height: 314.32px;
+    margin-left: 263px;
+}
+
+.dessert-image{
+    background: url(../images/photo-dessert.png);
+    border-radius: 60px;
+    width: 451px;
+    height: 299.98px;
+    margin-left: 263px;
+}
+
+
+/*gallery end*/
