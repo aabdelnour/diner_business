@@ -1,13 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit");
 @import url("https://fonts.googleapis.com/css2?family=Oswald");
 
-
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
-
-
 
 :root {
     --bg-color: #011F26;
@@ -16,40 +13,22 @@
     --blue-light: #88BABF;
     --blue-mid: #659AA6;
     --blue-deep: #005C72;
-
     --glass-red: #c83f4878;
     --glass-blue: #0083a1af;
-
     --font-primary: "Outfit", sans-serif;
     --font-secondary: "Oswald", sans-serif;
-
-    
-    
-    --size-h1:4.25rem; /*68px*/	
-    --size-h2:3rem; /*48px*/
-    --size-menu:1.75rem; /*28px*/
-    --size-testimonial:1.5rem; /*24px*/
-    --size-body:1.25rem; /*20px*/
-
-    /* 
-    NOTE about font weight
-
-    500 is regular
-    600-700 is semibold (depends on size)
-    800-900 is bold
-    */
+    --size-h1: 4.25rem; /* 68px */
+    --size-h2: 3rem; /* 48px */
+    --size-menu: 1.75rem; /* 28px */
+    --size-testimonial: 1.5rem; /* 24px */
+    --size-body: 1.25rem; /* 20px */
 }
-
-
-
-
 
 body {
     background: var(--bg-color);
-    color: var(--primary-color);
+    color: var(--primary-accent);
     font: var(--size-body) / 1.6 var(--font-primary);
 }
-
 
 h1,
 h2,
@@ -66,10 +45,10 @@ h6 {
 h1 {
     font-size: var(--size-h1);
 }
+
 h2 {
     font-size: var(--size-h2);
 }
-
 
 p {
     font-size: var(--size-body);
@@ -87,41 +66,36 @@ a:hover {
     text-decoration: underline;
 }
 
-
 main {
     width: 61.8vw;
-    max-width: 1440;
-    margin: 0 auto; 
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
-/* menu start */
+/* Header and Menu */
 header {
     display: flex;
     flex-direction: row;
-    align-items:center;
+    align-items: center;
     line-height: 4rem;
     font-size: var(--size-menu);
-    font-family: var(--font-secondary); 
+    font-family: var(--font-secondary);
 }
 
 .menu {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     flex-basis: 33.33%;
     gap: 30px;
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 1rem;
+    margin: 1rem auto 0;
 }
 
 .menu-item {
     text-align: left;
     color: white;
     text-transform: capitalize;
-    max-width: 100%;
-    max-height: auto;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 .menu img {
@@ -129,17 +103,20 @@ header {
     height: 100%;
 }
 
-/* menu end */
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 5rem 0 7rem;
+}
 
-
-/* footer start*/
 footer p {
     font-weight: 600;
 }
 
 footer a {
     color: white;
-    font-weight: normal;
     text-transform: capitalize;
     font-weight: 400;
 }
@@ -149,20 +126,7 @@ footer h3 {
     font-weight: 500;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-bottom: 7rem;
-    margin-top: 5rem;
-}
-
-.footer-decoration {  
-    /*
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    */
+.footer-decoration {
     width: 100%;
     height: 1.593rem;
     background-image: linear-gradient(to right, var(--secondary-accent) 30%, var(--primary-accent) 39%, var(--blue-light) 47%, var(--blue-deep) 80%, var(--secondary-accent) 100%);
@@ -176,26 +140,18 @@ footer {
 }
 
 .column form {
-    /*
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    */
     width: 400px;
     max-width: 100%;
-    position: relative; 
+    position: relative;
 }
 
 .column form input[type="email"] {
     background-color: #c1dde0cb;
     color: black;
-
     padding: 1rem 2rem;
     border-radius: 80px;
     font-family: var(--font-secondary);
     font-size: var(--size-body);
-
     width: 100%;
 }
 
@@ -205,36 +161,71 @@ footer {
     border: none;
     padding: 15px 30px;
     border-radius: 80px;
-    height: 100% - 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     font-family: var(--font-secondary);
     font-size: var(--size-body);
-
-    
     position: absolute;
     right: 8px;
     top: 8px;
     bottom: 8px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     line-height: 1;
-
 }
 
 .column form input[type="submit"]:hover {
     background-color: var(--blue-mid);
 }
-/* footer end */
 
+/* slogan start */
+.slogan {
+    position: relative;
+    width: 100%;
+    height: 521px;
+    overflow: hidden;
+    background-image: url('images/nyc-skyline.png');
+    background-size: cover;
+    background-position: center;
+}
 
+.slogan-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(101,154,166,0.8) 0%, rgba(0,92,114,0.8) 100%);
+}
 
+.slogan-content {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    max-width: 500px;
+}
 
+.slogan h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 62px;
+    font-weight: 600;
+    color: #F2EFDC;
+    line-height: 1.1;
+    margin: 0;
+}
 
-/*action start*/
+.gradient-text {
+    background: linear-gradient(to bottom, #FF6B6B, #FF9F9F);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+/* slogan end */
+
+/* Call to Action */
 .cta {
     position: relative;
     width: 100%;
@@ -294,34 +285,22 @@ footer {
 
 .cta-button:hover {
     background-color: #F2EFDC;
+    color: #000000;
 }
 
 .cta-button.locations {
     background-color: #04728C;
 }
 
-.cta-button.locations:hover {
-    color: #000000;
-}
-
 .cta-button.see-menu {
     background-color: #BF4B4B;
-}
-
-.cta-button.see-menu:hover {
-    color: #000000;
 }
 
 .cta-button.about-us {
     background-color: #659AA6;
 }
 
-.cta-button.about-us:hover {
-    color: #000000;
-}
-/*action end */
-
-/* closing start */
+/* Closing Section */
 .closing {
     background: var(--blue-light);
     height: 48rem;
@@ -331,14 +310,13 @@ footer {
     align-items: center;
 }
 
-.closing-text{
+.closing-text {
     flex: 1;
     text-align: left;
     margin: 1rem;
-
 }
 
-.closing-image{
+.closing-image {
     width: 425px;
     height: 520px;
     background: var(--primary-accent);
@@ -354,12 +332,10 @@ footer {
     line-height: 1.75;
 }
 
-.closing h2{
+.closing h2 {
     font-weight: 500;
     margin: 1rem;
     line-height: 1.75;
     font-size: 2rem;
     color: var(--primary-accent);
 }
-
-/* closing end/*
