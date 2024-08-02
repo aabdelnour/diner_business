@@ -365,3 +365,68 @@ footer h3 {
     font-size: 2rem;
     color: var(--primary-accent);
 }
+
+/* closing end/*
+
+/* gallery start */
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 100rem;
+    background-image: url(../images/checkerboard.png), url(../images/checkerboard.png);
+    background-position: top center, bottom center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% auto, 100% auto;
+    align-items: center;
+
+
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.image-container {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    object-fit: cover;
+    display: block;
+}
+
+.image-container:nth-child(1) {
+    grid-column: 1 / span 2;
+    width: 925px; 
+}
+
+.image-container:nth-child(2) {
+
+}
+
+.image-container:nth-child(3) {
+   grid-column: 1/ span 1;
+}
+
+.image-container:nth-child(4) {
+    margin-top: -310px;
+}
+
+@media (max-width: 600px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*gallery end*/
