@@ -249,6 +249,114 @@ header {
     background-color: #659AA6;
 }
 
+/* Testimonials Start */
+.testimonials-section {
+    background-color: var(--secondary-accent);
+    padding: 60px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .testimonials-title {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  
+  .testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto 0;
+  }
+  
+  .testimonial-card {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding-bottom: 0 px;
+    position: relative;
+  }
+  
+  .testimonial-image {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%; /* This creates a square aspect ratio */
+    position: relative;
+    margin-bottom: 80%z;
+    overflow: hidden;
+    z-index: 2;
+  }
+  
+  .testimonial-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .white-box {
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    width: calc(100% - 30px);
+    height: calc(80% - 30px);
+    background-color: var(--primary-accent);
+    z-index: 2;
+    padding-bottom: auto;
+  }
+  
+  .testimonial-content {
+    z-index: 2;
+    position: relative;
+    text-align: center;
+    padding: 40%;
+}
+
+.testimonial-heading {
+    margin-top: 20px;
+    text-align: center;
+    font-family: var(--font-secondary);
+    position: relative;
+}
+
+.testimonial-subtext {
+    z-index: 1; /* Added to ensure text is above the white box */
+    position: auto;
+    margin-top: 10px;
+    font-family: var(--font-primary);
+    display: block;
+}
+  
+  @media screen and (max-width: 768px) {
+    .testimonial-card {
+      flex: 1 1 calc(50% - 30px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .testimonial-card {
+      flex: 1 1 100%;
+    }
+  }
+  
+
+  
+  /* Testimonials End */
+
 /* Footer */
 footer {
     display: flex;
