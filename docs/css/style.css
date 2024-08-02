@@ -366,39 +366,63 @@ footer {
 
 /* gallery start */
 
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 100rem;
+    background-image: url(../images/checkerboard.png), url(../images/checkerboard.png);
+    background-position: top center, bottom center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% auto, 100% auto;
+    align-items: center;
 
-.waffle-image {
-    background: url(../images/photo-food.png);
-    border-radius: 60px;
-    width: 451px;
-    height: 314.32px;
-    margin-left: 263px;
-    top: 3915.96px;
+
 }
 
-.waitress-image {
-    background: url(../images/photo-waitress.png);
-    border-radius: 60px;
-    width: 451px;
-    height: 628.63px;
-    margin-left: 727px;
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
 }
 
-.diner-image{
-    background: url(../images/photo-diner.png);
-    border-radius: 60px;
-    width: 915px;
-    height: 314.32px;
-    margin-left: 263px;
+.image-container {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.dessert-image{
-    background: url(../images/photo-dessert.png);
-    border-radius: 60px;
-    width: 451px;
-    height: 299.98px;
-    margin-left: 263px;
+.image-container img {
+    object-fit: cover;
+    display: block;
 }
 
+.image-container:nth-child(1) {
+    grid-column: 1 / span 2;
+    width: 925px; 
+}
+
+.image-container:nth-child(2) {
+
+}
+
+.image-container:nth-child(3) {
+   grid-column: 1/ span 1;
+}
+
+.image-container:nth-child(4) {
+    margin-top: -310px;
+}
+
+@media (max-width: 600px) {
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /*gallery end*/
